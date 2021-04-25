@@ -1,0 +1,23 @@
+Tor:
+1. Download tor expert bundle.
+2. place torrc config file in the required location.
+3. go to tor/Tor/ dir.
+4. run, tor --hash-password <Pass> to set pass.
+5. place the hash to torrc file.
+6. run tor executable file.
+
+
+Requests module:
+1. pip install requests stem requests[socks]
+2. see the script.py example
+
+Scrapy:
+1. pip install scrapy stem pproxy
+2. scrapy doesn't support socks proxy, so need to convert the socks proxy to http.
+3. pproxy -l http://:8181 -r socks5://<socks5 proxy with port> -vv
+4. example: pproxy -l http://:8181 -r socks5://127.0.0.1:9050 -vv
+
+
+Selenium:
+1. pip install selenium
+2. see the script.py example under selenium dir
